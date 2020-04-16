@@ -1,0 +1,4 @@
+mypy==0.770
+Sphinx==3.0.1
+pylint==2.4.4
+sphinx_rtd_theme==0.4.3
