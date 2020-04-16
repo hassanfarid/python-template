@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pylint --rcfile=ci/pylint/.pylintrc gamedemo/ olddemo/ game.py
+pylint --rcfile=../ci/pylint/.pylintrc *

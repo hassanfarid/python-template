@@ -5,8 +5,8 @@
 echo "Running Code Style Checking..."
 
 echo "Scanning all modules"
-source ci/pylint/script.sh
+source ../ci/pylint/script.sh
 
 echo "Running Type Checking..."
 
-source ci/mypy/script.sh
+source ../ci/mypy/script.sh
