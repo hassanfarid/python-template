@@ -18,7 +18,7 @@ class Player:
                   Once it reaches 0, we're dead.
     """
 
-    def __init__(self, name: str, weapon: Weapon, health: int):
+    def __init__(self, name: str, weapon: Weapon, health: int = 100):
         """
         Create a new Player.
 
@@ -27,7 +27,7 @@ class Player:
         """
         self.name = name
         self.weapon = weapon
-        self.health = 100
+        self.health = health
 
     def take_hit(self, damage: int) -> int:
         """
@@ -40,7 +40,15 @@ class Player:
 
     @property
     def is_alive(self) -> bool:
-        """True if :attr:`health` is larger than 0, False otherwise"""
+        """True if :attr:`health` is larger than 0, False otherwise
+        >>> from gamedemo.weapons import Sword
+        >>> p1 = Player("The Knight", Sword(), 200)
+        >>> p1.is_alive
+        True
+        >>> p1 = Player("The Knight", Sword(), 0)
+        >>> p1.is_alive
+        False
+        """
         return self.health > 0
 
     def __str__(self) -> str:
