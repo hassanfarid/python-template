@@ -1,4 +1,6 @@
 .idea
+.coverage
 docs/_build
 __pycache__/
 .mypy_cache/
+.pytest_cache/
