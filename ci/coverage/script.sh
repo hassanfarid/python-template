@@ -4,4 +4,4 @@ if [ ! -f .coverage ]
 then
     source ../ci/pytest/script.sh
 fi
-coverage report --include="*"
+coverage html --rcfile=../ci/coverage/.coveragerc.ini
