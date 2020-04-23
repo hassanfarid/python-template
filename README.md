@@ -6,6 +6,22 @@ The knowledge about importance of writing quality code is common knowledge and a
 
 This project attempts to provide a template project, which can be used to get on-board with all known good practices using industry standard toolset for new and existing projects.
 
+## How to structure your code base
+This maybe a subjective matter, and there' no single bullet for this. Here are my recommendations for hot to structure your source code,
+
+```
+| component-code-repository (example: fantastic-app-backend)
+    | ci/ # all scripts helpful for CI process
+    | scripts/ # all short hand scripts for testing and running application in local env
+    | src/ # may contain all the source code specific to this repository
+    | tests/ # contains test suite for your code base
+    | CODEOWNERS
+    | CONTRIBUTION.md
+    | Dockerfile
+    | docker-compose.yml
+    | README.md
+```
+
 ## How to Build your project?
 The project can be built for multiple targets using single Dockerfile. The purpose of single Dockerfile is to make maintenance of deployment code easier.
 
