@@ -12,6 +12,7 @@ RUN pip install -r /app/requirements-ci.txt
 
 COPY ./src /app/src
 COPY ./ci /app/ci
+COPY ./tests /app/tests
 COPY ./docs /app/docs
 
 FROM base as prod
